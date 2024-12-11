@@ -14,7 +14,7 @@ export default {
         class="text-white hover:bg-gray-700 px-4 py-2 rounded transition-all duration-200"
         active-class="bg-gray-600"
       >
-        Home
+        Dashboard
       </RouterLink>
 
       <RouterLink

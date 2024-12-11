@@ -1,8 +1,8 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
+  mode: 'jit', // Active le mode JIT
   content: [
-    './index.html', // Le fichier HTML
-    './src/**/*.{vue,js,ts,jsx,tsx}', // Tous les fichiers Vue, JS, TS, JSX et TSX dans le dossier src
+    './index.html',
+    './src/**/*.{vue,js,ts,jsx,tsx}', // Assurez-vous que cela inclut les fichiers .vue
   ],
   theme: {
     extend: {},
