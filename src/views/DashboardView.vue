@@ -1,7 +1,6 @@
 <script setup>
-// import KanbanCompoVue from '@/components/KanbanCompo.vue'
 import { ref } from 'vue'
-
+import ProjetCard from '@/components/ProjetCard.vue'
 const listProjets = ref([
   {
     id: '1',
@@ -31,10 +30,7 @@ const listProjets = ref([
 </script>
 
 <template>
-  <!-- <KanbanCompoVue /> -->
-  <ul>
-    <li v-for="projet in listProjets">{{ projet.name }}</li>
-  </ul>
+  <ProjetCard v-for="projet in listProjets" :key="projet.id" :projet="projet" />
 </template>
 
 <style scoped>

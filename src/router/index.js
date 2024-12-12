@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import DashboardView from '../views/DashboardView.vue'
+import KanbanCompo from '../components/KanbanCompo.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,6 +9,11 @@ const router = createRouter({
       path: '/',
       name: 'DashBoard',
       component: DashboardView,
+    },
+    {
+      path: '/projets/:id',
+      name: 'KanbanCompo',
+      component: KanbanCompo,
     },
     {
       path: '/about',
